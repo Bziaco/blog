@@ -10,6 +10,7 @@ module.exports = {
     author: "Jaehwan Bae",
   },
   plugins: [
+    "gatsby-transformer-yaml",
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-contentful`,
