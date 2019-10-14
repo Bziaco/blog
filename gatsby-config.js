@@ -10,15 +10,14 @@ module.exports = {
     author: "Jaehwan Bae",
   },
   plugins: [
-    "gatsby-transformer-yaml",
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: "w87qxmx10xu2",
-        accessToken: "_ojOMdITpkAYRhWY5v7wmmPz0l-mpIzcIZsiLv2Ry0o",
-      },
-    },
+    // "gatsby-plugin-react-helmet",
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: "w87qxmx10xu2",
+    //     accessToken: "_ojOMdITpkAYRhWY5v7wmmPz0l-mpIzcIZsiLv2Ry0o",
+    //   },
+    // },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",

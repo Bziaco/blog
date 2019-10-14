@@ -1,7 +1,7 @@
 ---
-title: "The Great Effectvie Java 3/E item02"
-date: "2019-09-25"
-category: network
+title: "The Great Effectvie Java 3/E item03"
+date: "2019-10-03"
+category: java
 ---
 
 <h1>생성자에 매개변수가 많다면 빌더를 고려하라</h1>

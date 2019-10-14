@@ -11,6 +11,18 @@ const Header = () => {
           title
         }
       }
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              category
+            }
+          }
+        }
+      }
     }
   `)
   return (
@@ -57,6 +69,30 @@ const Header = () => {
             >
               Contact
             </Link>
+          </li>
+          <li>
+            <a href="#" className={headerStyles.navItem}>
+              Category
+            </a>
+
+            <ul className={headerStyles.dropdownItem}>
+              <li>
+                <Link key="java" to="/blog">
+                  All
+                </Link>
+              </li>
+              <li>
+                <Link key="network" to="/blog">
+                  Java
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog">Spring</Link>
+              </li>
+              <li>
+                <Link to="/blog">Network</Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

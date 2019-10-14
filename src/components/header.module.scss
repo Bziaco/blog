@@ -27,3 +27,28 @@
 .active-nav-item {
   color: #333333;
 }
+
+.dropdownItem {
+  background: rgb(196, 197, 231);
+  display: none; /* 평상시에는 서브메뉴가 안보이게 하기 */
+  list-style-type: none;
+  text-decoration: none;
+  color: #999999;
+  font-size: 0.9rem;
+  //height: auto;
+  padding: 10px;
+  margin: 2px;
+  // border: 0px;
+  position: absolute;
+  // width: 200px;
+  //z-index: 200;
+}
+
+.header li:hover ul {
+  display: block; /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
+}
+
+.dropdownItem li a {
+  text-decoration: none;
+  color: #999999;
+}

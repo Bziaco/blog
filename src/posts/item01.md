@@ -1,9 +1,8 @@
 ---
 title: "The Great Effectvie Java 3/E item01"
 date: "2019-09-24"
+category: java
 ---
-
-![Grass](./grass.jpg)
 
 <h1>생성자 대신 팩터리 메서드를 고려하라</h1>
 
