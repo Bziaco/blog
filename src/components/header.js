@@ -70,7 +70,7 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <li>
+          {/* <li>
             <a href="#" className={headerStyles.navItem}>
               Category
             </a>
@@ -93,7 +93,7 @@ const Header = () => {
                 <Link to="/blog">Network</Link>
               </li>
             </ul>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

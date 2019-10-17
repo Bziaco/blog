@@ -8,13 +8,11 @@ import Head from "../components/head"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
-    query($category: String!) {
-      allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: $category } } }
-      ) {
+    query {
+      allMarkdownRemark {
         edges {
           node {
-            excerpt(truncate: true, pruneLength: 100)
+            excerpt(truncate: true, pruneLength: 200)
             frontmatter {
               title
               date
