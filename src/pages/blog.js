@@ -9,7 +9,7 @@ import Head from "../components/head"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
             excerpt(truncate: true, pruneLength: 200)
@@ -22,6 +22,9 @@ const BlogPage = () => {
             }
           }
         }
+        pageInfo {
+          itemCount
+        }
       }
     }
   `)
@@ -29,7 +32,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <Head title="Blog"></Head>
-      <h1>Blog</h1>
+      <h2>{data.allMarkdownRemark.pageInfo.itemCount}건</h2>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
