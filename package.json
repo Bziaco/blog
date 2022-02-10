@@ -29,7 +29,7 @@
     "gatsby-transformer-yaml": "^2.2.12",
     "language-rust": "^0.4.12",
     "mdbreact": "^4.21.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.14",
